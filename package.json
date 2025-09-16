@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Meghana",
+  "license": "ISC",
+  "description": "This project is basicly a clone of github",
+  "dependencies": {
+    "yargs": "^18.0.0"
+  }
+}
