@@ -24,7 +24,9 @@ yargs(hideBin(process.argv))
       describe:"Provide message for the commit being made",
       type:"string"
     })
-  },commitRepo)
+  },(argv)=>{
+      commitRepo(argv.message)
+  })
   .command("push","Push the changes to S3",{},pushRepo)
   .command("pull","Pull changes from S3",{},pullRepo)
   .command("revert <commitID>","Reverts to specific commit",(yargs)=>{
